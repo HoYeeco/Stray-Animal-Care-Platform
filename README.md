@@ -1,5 +1,5 @@
 <h1>Stray Animal Care Platform</h1>
-<h2>城市流浪动物救助关爱平台</h2>
+<h2>爪印归途——流浪动物救助信息交流平台</h2>
 <h3>技术栈</h3>
 <ol>
   <li>前后端分离：Spring Boot3 + MyBaits Plus + Vue3</li>
