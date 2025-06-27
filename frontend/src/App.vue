@@ -1,21 +1,16 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <Manage />
   </header>
-
   <main>
-    <TheWelcome />
+    <router-view></router-view>
   </main>
 </template>
+
+<script setup>
+// 引入 Manage 组件
+import Manage from './components/Manage.vue';
+</script>
 
 <style scoped>
 header {
@@ -43,5 +38,24 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+</style>
+
+<style>
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 64px; /* 为固定导航栏留出空间 */
+  width: 100%;
+  min-height: calc(100vh - 64px); /* 确保内容区域高度 */
+}
+
+#app {
+  padding-top: 0; /* 移除顶部内边距，避免导航栏位置异常 */
 }
 </style>
