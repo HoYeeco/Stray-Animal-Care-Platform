@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" :class="{'bg-opacity-95': scrollPosition > 50, 'bg-opacity-100': scrollPosition <= 50}">
+    <nav class="bg-rgb[(252,211,55)] shadow-md fixed w-full z-50 transition-all duration-300" :class="{'bg-opacity-95': scrollPosition > 50, 'bg-opacity-100': scrollPosition <= 50}">
       <div class="w-full px-4">
         <div class="flex justify-between items-center h-16">
 
