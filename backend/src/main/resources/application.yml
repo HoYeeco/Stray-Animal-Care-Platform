@@ -9,3 +9,6 @@ spring:
     jackson:
         date-format: yyyy-MM-dd
         time-zone: GMT+8
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
