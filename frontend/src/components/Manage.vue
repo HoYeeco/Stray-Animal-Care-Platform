@@ -34,22 +34,19 @@
             </div>
             <!-- 救助基地 -->
             <router-link to="/rescuebase" class="nav-link flex items-center">救助基地</router-link>
-            <!-- 交流科普 -->
-            <div class="relative group">
-              <router-link to="/communication" class="nav-link flex items-center">交流科普</router-link>
-              <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top-right scale-95 group-hover:scale-100 dropdown-enter-active dropdown-leave-active">
-                <div class="py-1" role="menu" aria-orientation="vertical">
-                  <router-link to="/communication/forum" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">社区论坛</router-link>
-                  <router-link to="/communication/ai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">智能科普</router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- 用户名 -->
-          <div class="flex items-center">
+            <!-- 社区论坛 -->
+            <router-link to="/forum" class="nav-link flex items-center">社区论坛</router-link>
+            <!-- 智能科普 -->
+            <router-link to="/ai" class="nav-link flex items-center">智能科普</router-link>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center space-x-5">
+    
+            <!-- 用户名 -->
             <div class="flex items-center">
-              <span class="ml-2 font-medium text-gray-700 user-info-text">宠物爱好者</span>
+              <div class="flex items-center">
+                <span class="ml-2 font-medium text-gray-700 user-info-text">宠物爱好者</span>
+              </div>
             </div>
           </div>
         </div>

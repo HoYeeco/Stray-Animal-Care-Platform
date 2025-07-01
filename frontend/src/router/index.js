@@ -55,23 +55,17 @@ const router = createRouter({
       name: 'RescueBase', 
       component: () => import('../views/RescueBase.vue') 
     },
-    // 交流科普
-    { 
-      path: '/communication', 
-      name: 'Communication', 
-      component: () => import('../views/Communication/Communication.vue') 
-    },
     // 社区论坛
     { 
-      path: '/communication/forum', 
+      path: '/forum', 
       name: 'Forum', 
-      component: () => import('../views/Communication/Forum.vue') 
+      component: () => import('../views/Forum.vue') 
     },
     // 智能科普
     { 
-      path: '/communication/ai', 
+      path: '/ai', 
       name: 'AI', 
-      component: () => import('../views/Communication/AI.vue') 
+      component: () => import('../views/AI.vue') 
     },
 
   ]
