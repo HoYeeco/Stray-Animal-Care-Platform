@@ -34,7 +34,7 @@ CREATE TABLE `t_upload_records` (
   `discovery_time` date NOT NULL COMMENT '发现时间(YYYY-MM-DD)',
   `discovery_place` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '发现地点',
   `description` text COLLATE utf8mb4_unicode_ci COMMENT '补充描述',
-  `image_url` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '图片',
+  `image_url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '图片',
   PRIMARY KEY (`upload_record_id`),
   CONSTRAINT `chk_reporter_phone` CHECK (regexp_like(`reporter_phone`,_utf8mb4'^[0-9]{11}$'))
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='上报记录表';
@@ -46,7 +46,7 @@ CREATE TABLE `t_upload_records` (
 
 LOCK TABLES `t_upload_records` WRITE;
 /*!40000 ALTER TABLE `t_upload_records` DISABLE KEYS */;
-INSERT INTO `t_upload_records` VALUES (1,'何可可','17509901122','小熊','狗','母','轻微脱水','已绝育','2025-06-27','成都市锦江区静安路1号停车场E区','有点胆小','bear.jpg'),(2,'祝缨','18351512200','花花','猫','母','健康','不详','2025-06-28','成都市武侯区玉林路24号后门保安亭','不喜欢吃猫粮','11');
+INSERT INTO `t_upload_records` VALUES (1,'何可可','17509901122','小熊','狗','母','轻微脱水','已绝育','2025-06-27','成都市锦江区静安路1号停车场E区','有点胆小，不要对它大声喊叫','bear.jpg'),(2,'祝缨','18351512200','花花','猫','母','健康','不详','2025-06-28','成都市武侯区玉林路24号后门保安亭','不喜欢吃猫粮，建议准备罐头','11');
 /*!40000 ALTER TABLE `t_upload_records` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
