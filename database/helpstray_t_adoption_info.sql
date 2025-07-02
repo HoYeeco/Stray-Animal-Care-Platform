@@ -50,7 +50,7 @@ CREATE TABLE `t_adoption_info` (
 
 LOCK TABLES `t_adoption_info` WRITE;
 /*!40000 ALTER TABLE `t_adoption_info` DISABLE KEYS */;
-INSERT INTO `t_adoption_info` VALUES (1,'小熊','狗','公','轻微脱水','已绝育','暂无','2025-06-28','成都市锦江区静安路1号','有点胆小','bear.jpg','可领养',1,NULL),(2,'花花','猫','母','健康','不详','暂无','2025-06-28','成都市武侯区玉林路24号','不喜欢吃猫粮','无','可领养',2,NULL);
+INSERT INTO `t_adoption_info` VALUES (1,'小熊','狗','公','轻微脱水','已绝育','暂无','2025-06-28','成都市锦江区静安路1号','有点胆小，不要对它大声喊叫','bear.jpg','可领养',1,NULL),(2,'花花','猫','母','健康','不详','暂无','2025-06-28','成都市武侯区玉林路24号','不喜欢吃猫粮，建议准备罐头','无','可领养',2,NULL);
 /*!40000 ALTER TABLE `t_adoption_info` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
