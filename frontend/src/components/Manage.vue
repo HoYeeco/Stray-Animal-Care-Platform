@@ -51,8 +51,9 @@
           </div>
         </div>
       </div>
-    </nav>
-  </template>
+    </div>
+  </nav>
+</template>
   
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from 'vue';
